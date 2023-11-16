@@ -1,0 +1,18 @@
+#spring.main.web_environment=false
+spring:
+  main:
+    show_banner: false
+  servlet:
+    multipart:
+      enabled: false
+server:
+  port: 8082
+  contextPath: /v1
+
+a:
+  b: 3
+
+logging:
+  level:
+    root: INFO
+    spring: TRACE
