@@ -53,17 +53,18 @@ public class FileUploadController {
                         File tmp = new File(fileName);
                         int till = tmp.getName().lastIndexOf('.');
                         if (till < 1) till = tmp.getName().length();
-                        final String prename = tmp.getName().substring(0, till);
+                        String preName = tmp.getName().substring(0, till);
                         String postName = null;
                         if (till < tmp.getName().length()) {
                             postName = "." + tmp.getName().substring(till + 1);
                         } else {
-                            postName = ".";
+                            postName = ".x";
                         }
-                        while (postName.length() < 4) {
-                            postName += "x";
+                        while (preName.length() < 3) {
+                            preName += "x";
                         }
-                        File fOut = File.createTempFile(prename, postName, foutDir);
+                        if(preName.charAt(0) == '.')preName = 'f' + preName;
+                        File fOut = File.createTempFile(preName, postName, foutDir);
                         final OutputStream fos = new BufferedOutputStream(new FileOutputStream(fOut));
 
                         int bufLen = 8192;
