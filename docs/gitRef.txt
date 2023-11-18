@@ -1,0 +1,14 @@
+tail logs/app.log 
+
+#add a sample log file but we dont want it to be updated later
+git add -f logs/app.log 
+git status
+git add .
+git status
+git update-index --assume-unchanged logs/app.log
+git status
+git commit -m "file up skeleton app"
+git remote add origin git@github.com:tgkprog/fileup.git
+git branch -M main
+git push -u origin main
+

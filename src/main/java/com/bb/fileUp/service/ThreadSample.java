@@ -24,9 +24,9 @@ public class ThreadSample implements ApplicationListener<ApplicationReadyEvent>,
     }
 
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        System.out.println("Sprng File up parse " );
-        Thread th = new Thread(this);
-        th.start();
-        System.out.println("a");
+        //System.out.println("Sprng File up parse " );
+        ///Thread th = new Thread(this);
+        //th.start();
+        //System.out.println("a");
     }
 }

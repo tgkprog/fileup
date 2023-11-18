@@ -17,4 +17,10 @@ public class UploadStatus {
 
     private int errorCode;
     private String errorMessage;
+
+    public UploadStatus mainSet(String msg, String errorMessage){
+        message = msg;
+        this.errorMessage = errorMessage;
+        return this;
+    }
 }
