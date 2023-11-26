@@ -2,9 +2,8 @@ package com.bb.fileUp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.experimental.Accessors;
 import lombok.NoArgsConstructor;
-import org.springframework.http.ResponseEntity;
+import lombok.experimental.Accessors;
 
 
 @NoArgsConstructor

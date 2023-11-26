@@ -13,10 +13,10 @@ public class FileUploadMainApp {
         SpringApplication application = new SpringApplication(FileUploadMainApp.class);
         //application.setBannerMode(Banner.Mode.OFF);
         Set<String> sources = application.getSources();
-        int i =0;
-        for(String s: sources){
-            System.out.println((++i) + "Source :" +  s);
-        }
+//        int i =0;
+//        for(String s: sources){
+//            System.out.println((++i) + "Source :" +  s);
+//        }
         application.run(args);
 
     }

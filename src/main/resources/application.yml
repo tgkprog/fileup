@@ -16,3 +16,41 @@ logging:
   level:
     root: INFO
     spring: TRACE
+
+bb-clients:
+  url: k3
+  clients:
+    c1:
+      name: C1 corp
+      handler: L
+      max: 300
+      max2: 30
+    pepso:
+      name: Pepso Inc
+      handler: B
+      max: 304
+      max2: 35
+
+
+server2:
+  application:
+    name: InjectMapFromYAML
+    url: http://injectmapfromyaml.dev
+    description: How To Inject a map from a YAML File in Spring Boot
+  config:
+    ips:
+      - 10.10.10.10
+      - 10.10.10.11
+      - 10.10.10.12
+      - 10.10.10.13
+    filesystem:
+      - /dev/root
+      - /dev/md2
+      - /dev/md4
+  users:
+    root:
+      username: root
+      password: rootpass
+    guest:
+      username: guest
+      password: guestpass

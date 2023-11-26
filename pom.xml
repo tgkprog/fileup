@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.bb.fileUp</groupId>
-    <artifactId>FileUp</artifactId>
+    <artifactId>FileUpHm</artifactId>
     <version>1</version>
     <name>uploading-files-initial</name>
     <description>Chunked file upload with Spring Boot and Apache file handler</description>
